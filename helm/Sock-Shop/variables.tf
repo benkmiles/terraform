@@ -4,7 +4,8 @@ variable "apikey" {
 }  
 variable "secretkey" {
   type  = string
-  default = "/home/ben/keys/KNX-INTERSIGHT-API-SECRET.txt"
+  //default = "/home/ben/keys/KNX-INTERSIGHT-API-SECRET.txt"
+  default = "C:\\Users\\Ben\\iCloudDrive\\Cisco\\Keys\\KNX-INTERSIGHT-API-SECRET.txt"
 
 }
 variable "endpoint" {
@@ -12,5 +13,5 @@ variable "endpoint" {
 }
 variable "IKSCluster" {
   type = string
-  default = "KNX-CL1"
+  default = "KXV-CL1"
 }
