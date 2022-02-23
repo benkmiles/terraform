@@ -29,7 +29,7 @@ provider "helm" {
 }
 data "kubernetes_service" "socks-lb" {
   metadata {
-    namespace = "socks"
+    namespace = var.namespace
     name = "front-end"
   }
   depends_on = [helm_release.socks-demo]

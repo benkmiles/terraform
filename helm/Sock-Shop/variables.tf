@@ -15,3 +15,8 @@ variable "IKSCluster" {
   type = string
   default = "KXV-CL1"
 }
+variable "namespace" {
+  type = string
+  description = "Namespace to install application"
+  default = "socks"
+}
