@@ -41,3 +41,5 @@ variable "ClusterName" {
 variable "apic_url" {}
 variable "apic_username" {}
 variable "apic_password" {}
+variable "api_key_id" {}
+variable "api_private_key" {}
