@@ -18,7 +18,7 @@ data "intersight_organization_organization" "organization_moid" {
 resource "intersight_kubernetes_cluster_profile" "deployaction" {
 
  #Kubernetes Cluster Profile  Adjust the values as needed.
-  name                = "${ClusterName}"
+  name                = var.ClusterName
   action              = "Deploy"
   
   depends_on = [module.iks_cluster]
@@ -37,7 +37,7 @@ module "iks_cluster" {
 
 # Kubernetes Cluster Profile  Adjust the values as needed.
   cluster = {
-    name                = "${ClusterName}"
+    name                = var.ClusterName
     action              = "Assigned"
     wait_for_completion = false
     worker_nodes        = 3
